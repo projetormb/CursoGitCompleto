@@ -1,0 +1,18 @@
+    <div id="wrapper">
+
+        {% include 'action_dash2_left.html' %}
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                {% include 'action_dash2_top.html' %}
+            </div>
+
+            {% if context.inner is not None %}
+                {% include context.inner %}
+            {% endif %}
+
+        </div>
+
+        {% include 'action_dash2_chatbox.html' %}
+        {% include 'action_dash2_rightsidebar.html' %}
+    </div>
